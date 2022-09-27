@@ -1,1 +1,1 @@
-# 42 Project - libft
+# 42 Cursus - libft
