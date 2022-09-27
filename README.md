@@ -1,1 +1,2 @@
-# libft\ \|\ \42 Cursus
+# libft | 42 Cursus
+> Esto es una Quote 
