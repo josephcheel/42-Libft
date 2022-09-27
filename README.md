@@ -1,1 +1,1 @@
-# libft   |   42 Cursus
+# libft\ \|\ \42 Cursus
