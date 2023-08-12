@@ -25,7 +25,7 @@
 *
  
 ```shell
-> ./so_long map.ber
+> ./
 > ./so_long_bonus map.ber
 ```
 <!-- > <picture>
@@ -44,20 +44,7 @@
 
 <img align="right" width="150" src="EXAMPLE ON RIGHT">
 
-* The map has to be constructed with 5 components: **walls**, **collectibles**(one minimum), **empty space**, **exit**(one minimum) and **player**(only one). These are the 5 Characters that a map is composed:
-  * **0** for an empty space
-  * **1** for a wall
-  * **C** for a collectible
-  * **E** for a map exit
-  * **P** for the player’s starting position
-
 <img align="right" width="200" src="EXAMPLE ON RIGHT">
-
-* <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys must be used to move the main character:
-  * <kbd>W</kbd> to go up ↑
-  * <kbd>S</kbd> to go down ↓
-  * <kbd>D</kbd> to go right ➞
-  * <kbd>A</kbd> to go left ←
 
 ## Bonus Instrucctions
 
