@@ -5,7 +5,7 @@
   </picture>
 </h1>
 
-> Mini Description
+> This project is about coding a C library. It will contain a lot of general purpose functions your programs will rely upon.
 
 <div align="center">
 <img align="center"  width="600" src="GIF">
@@ -37,10 +37,48 @@
  -->
 
 ## Mandatory Instrucctions
-*
-*
-*
-*
+#### Part I
+<p align="center">
+• isalpha
+• isdigit
+• isalnum
+• isascii
+• isprint
+• strlen
+• memset
+• bzero
+• memcpy
+• memmove
+• strlcpy
+• strlcat
+<br>• toupper
+• tolower
+• strchr
+• strrchr
+• strncmp
+• memchr
+• memcmp
+• strnstr
+• atoi
+• calloc
+• strdup
+</p>
+
+
+#### Part II
+<p align="center">
+• ft_substr
+• ft_strjoin
+• ft_strtrim
+• ft_split
+• ft_itoa
+• ft_strmapi
+• ft_striteri
+• ft_putchar_fd
+• ft_putstr_fd
+<br>• ft_putendl_fd
+• ft_putnbr_fd
+</p>
 
 <img align="right" width="150" src="EXAMPLE ON RIGHT">
 
