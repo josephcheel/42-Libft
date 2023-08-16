@@ -1,36 +1,54 @@
 NAME	=	libft.a
 
-SRCS	= ft_strlcat.c ft_substr.c ft_atoi.c ft_strdup.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_isascii.c ft_bzero.c ft_memcpy.c ft_toupper.c ft_tolower.c ft_strchr.c ft_memcmp.c ft_memchr.c ft_isdigit.c ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strjoin.c ft_strtrim.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_memmove.c ft_split.c ft_strnstr.c ft_substr.c 
+CFLAGS =  -W -Wall -Wextra -Werror
+XFLAGS	= -fsanitize=address -g2
 
-SRCS_EXTRA = ft_substrfree.c ft_strjoinfree.c
-BONUS	= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+AR		= ar -rcs
+RM		= rm -f
+MD		= mkdir -p
+CP		= cp -f
 
-BONUS_OBJS = ${BONUS:.c=.o}
+SRC_DIR	= src/
+OBJ_DIR	= obj/
+INC_DIR	= inc/
 
-OBJS = ${SRCS:.c=.o} $(SRCS_EXTRA:.c=.o)
+INCLUDE	= -I $(INC_DIR)
 
-CC		= gcc
+LIBFT_SRC	= ft_strlcat.c ft_substr.c ft_atoi.c ft_strdup.c \
+			ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
+			ft_isprint.c ft_strlen.c ft_memset.c ft_isascii.c \
+			ft_bzero.c ft_memcpy.c ft_toupper.c ft_tolower.c \
+			ft_strchr.c ft_memcmp.c ft_memchr.c ft_isdigit.c \
+			ft_strrchr.c ft_strncmp.c ft_strlcpy.c ft_putchar_fd.c \
+			ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strjoin.c \
+			ft_strtrim.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_memmove.c \
+			ft_split.c ft_strnstr.c ft_substr.c ft_lstnew.c ft_lstadd_front.c \
+			ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
+			ft_lstiter.c ft_lstmap.c
 
-CFLAGS	=	-Wall -Werror -Wextra
+SRCS	+=	$(addprefix $(SRC_DIR), $(LIBFT_SRC))
+OBJS	=	$(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
+DEPS	=	$(addsuffix .d, $(basename $(OBJS)))
 
-RM 		= 		rm -f
+$(OBJ_DIR)%.o: %.c Makefile
+		$(MD) $(dir $@) 
+		$(CC) -MT $@ -MMD $(CFLAGS) $(INCLUDE) -c $< -o $@
 
-.c.o:
-		$(CC) $(CFLAGS) -c  $< -o $(<:.c=.o)
+all:		$(NAME) 
 
-$(NAME):	$(OBJS) $(BONUS_OBJS) 
-			ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
-all:		$(NAME)
+$(NAME):	$(OBJS)
+			$(AR) $(NAME) $(OBJS) 
 
-bonus: ${BONUS_OBJS} ${OBJS}
-		ar rcs ${NAME} ${BONUS_OBJS} ${OBJS}
+
 clean:
-			$(RM) $(OBJS) $(BONUS_OBJS)
+			$(RM) -r $(OBJ_DIR) 
 
 fclean:		clean  
 			$(RM) $(NAME)
 
 re:			fclean all
+
+-include $(DEPS)
 
 .PHONY: all clean fclean re 
