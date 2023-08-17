@@ -11,11 +11,9 @@
 
 > This project is about coding a C library. It will contain a lot of general purpose functions your programs will rely upon.
 
-<div align="center">
-<img align="center"  width="600" src="GIF">
-</div>
+<!--<div align="center"><img align="center"  width="600" src="GIF"></div>
 <br>
-<br>
+<br>-->
  <img align="right" width="150" src="Success 42 Square"> 
  
 ### What is the the project about
@@ -24,14 +22,6 @@
 
 ## General Instrucctions
 
-*
-*
-*
- 
-```shell
-> ./
-> ./so_long_bonus map.ber
-```
 <!-- > <picture>
 >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/warning.svg">
 >   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
@@ -84,16 +74,14 @@
 • ft_putnbr_fd
 </p>
 
-<img align="right" width="150" src="EXAMPLE ON RIGHT">
+<!--<img align="right" width="150" src="EXAMPLE ON RIGHT">
 
-<img align="right" width="200" src="EXAMPLE ON RIGHT">
+<img align="right" width="200" src="EXAMPLE ON RIGHT">-->
 
 ## Bonus Instrucctions
-
-*
-*
-*
-*
+<p align="center">
+• ft_lstnew • ft_lstadd_front • ft_lstsize • ft_lstlast • ft_lstadd_back • ft_lstdelone • ft_lstclear • ft_lstiter • ft_lstmap
+</p>
 
 ### How to compile it
 > Compilation is done through makefile rules.
@@ -103,8 +91,8 @@
 <img width="1000" src="readme_resources/make_bash.gif">
 </div>
 
-* If you use <kbd>make</kbd> command it will appear the ***./so_long*** executable file.
-* You can use <kbd>make bonus</kbd> command and it will appear ***./so_long_bonus*** executable file
+* If you use <kbd>make</kbd> command it will appear the ***libft.a*** executable file.
+* You can use <kbd>make bonus</kbd> command and it will appear ***libft.a*** executable file
 
 ```shell
 > make
