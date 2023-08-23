@@ -9,7 +9,7 @@
 </h1>
 <!--FINISH HEADER-->
 
-> This project is about coding a C library and creating your own library.  This project is about understanding the way some basic functions work, implementing and learning to use them.
+> This project is about coding a C library and creating your own library.  Libft is about understanding the way some basic functions work, implementing and learning to use them.
 
 <img align="right" width="150" src="https://github.com/josephcheel/readme/blob/main/resources/125_Success.png">
 
