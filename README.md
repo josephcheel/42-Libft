@@ -100,16 +100,23 @@ The project is about recoding some C basic functions. The first part has some fu
 </p>
 
 ## Bonus Instrucctions
-<div  align="center"><b>No External Functions Allowed</b></div>
+#### What is bonus about 
+**Bonus Part** introduces a new type of data structure, called **Linked List** or **Lists**. To use this data all the functions use this C struct.
+* <code>void *content</code> stores the content
+* <code>struct s_list *next</code> adresses the next node of the list or NULL if the next node is the last one.
+<img width="1175" alt="t_list img" src="readme/t_list.png">
+
+
+<div  align="center"><b>Functions</b></div>
 <p align="center">
-• ft_lstnew • ft_lstadd_front • ft_lstsize • ft_lstlast • ft_lstadd_back • ft_lstdelone • ft_lstclear • ft_lstiter • ft_lstmap
+• ft_lstnew(Malloc) • ft_lstadd_front • ft_lstsize • ft_lstlast • ft_lstadd_back • ft_lstdelone(Free) • ft_lstclear(Free) • ft_lstiter • ft_lstmap(Malloc & Free)
 </p>
 
 ### How to compile it
 > Compilation is done through makefile rules.
 
 <div align="center">
-<img width="700" src="readme/Compilation.gif">
+<img width="500" src="readme/Compilation.gif">
 </div>
 
 * If you use <kbd>make</kbd> command it will appear the ***libft.a*** executable file.
