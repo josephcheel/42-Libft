@@ -11,7 +11,7 @@
 
 > This project is about coding a C library and creating your own library.  This project is about understanding the way some basic functions work, implementing and learning to use them.
 
-<img align="right" width="150" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Success.png">
+<img align="right" width="150" src="https://github.com/josephcheel/readme/blob/main/resources/125_Success.png">
 
 ### What is the the project about
 The project is about recoding some C basic functions. The first part has some functions from ***libc***, and the second part are functions that either not in the libc, or that are part of it but in a different form.
@@ -104,7 +104,7 @@ The project is about recoding some C basic functions. The first part has some fu
 **Bonus Part** introduces a new type of data structure, called **Linked List** or **Lists**. To use this data all the functions use this C struct.
 * <code>void *content</code> stores the content
 * <code>struct s_list *next</code> adresses the next node of the list or NULL if the next node is the last one.
-<img width="1175" alt="t_list img" src="readme/t_list.png">
+<img width="1175" alt="t_list img" src="https://github.com/josephcheel/readme/blob/main/resources/libft/t_list.png">
 
 
 <div  align="center"><b>Functions</b></div>
@@ -116,7 +116,7 @@ The project is about recoding some C basic functions. The first part has some fu
 > Compilation is done through makefile rules.
 
 <div align="center">
-<img width="500" src="readme/Compilation.gif">
+<img width="500" src="https://github.com/josephcheel/readme/blob/main/resources/libft/Compilation.gif">
 </div>
 
 * If you use <kbd>make</kbd> command it will appear the ***libft.a*** executable file.
