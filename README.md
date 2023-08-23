@@ -9,14 +9,17 @@
 </h1>
 <!--FINISH HEADER-->
 
-> This project is about coding a C library. It will contain a lot of general purpose functions your programs will rely upon.
+> This project is about coding a C library and creating your own library.  This project is about understanding the way some basic functions work, implementing and learning to use them.
 
-<!--<div align="center"><img align="center"  width="600" src="GIF"></div>
+<!--<div align="center"><img align="center"  width="900" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Molinette.png"></div>->
+<!--<img align="right" width="500" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Molinette.png"> -->
+
+<img align="right" width="150" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Success.png">
 <br>
-<br>-->
- <img align="right" width="150" src="Success 42 Square"> 
+<!-- <img align="right" width="500" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Molinette_dark.png"> -->
  
 ### What is the the project about
+The project is about recoding some C basic functions. The first part has some functions from ***libc***, and the second part are functions that either not in the libc, or that are part of it but in a different form.
 
 [//]: <> (This project is about creating a 2D game, which you can interact with your keyboard! The task has two parts: the **mandatory** and the **bonus**. Each of these parts is compiled and execute separately. The bonus has the same features plus some extra.)
 
@@ -29,6 +32,14 @@
 >
 > Map must have the ***.ber*** extension
  -->
+* Makefile will compile your source files. Must have **'all'** and **'bonus'** rules for Mandatory and Bonus respectively. It must not relink.
+* Program compilation must generate ***libft.a*** library
+> <picture>
+>   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/warning.svg">
+>   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
+> </picture><br>
+>
+> Once <code>make</code> or <code>make</code> is used. Compiling with <code>make bonus</code> must not recompile mandatory files.
 
 ## Mandatory Instrucctions
 #### Part I
