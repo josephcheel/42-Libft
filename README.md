@@ -14,14 +14,15 @@
 <img align="right" width="150" src="https://github.com/josephcheel/readme/blob/main/resources/125_Success.png">
 
 ### What is the the project about
-The project is about recoding some C basic functions. The first part has some functions from ***libc***, and the second part are functions that either not in the libc, or that are part of it but in a different form.
+The project involves re-coding certain fundamental C functions. The first part covers functions from ***Libc***, while the second part includes functions that are either not present in libc or are part of it but in a different form.
+
 
 > <picture>
 >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/danger.svg">
 >   <img alt="Danger" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/danger.svg">
 > </picture><br>
 >
-> The project should compile the Mandatory and Bonus separately, but in this version is unified to make use of the whole library on other projects more easily
+> The project should compile the Mandatory and Bonus sections separately. However, in this version, they are unified to make use of the entire library more easily in other projects.
 
 ## General Instrucctions
 
@@ -39,7 +40,7 @@ The project is about recoding some C basic functions. The first part has some fu
 >   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
 > </picture><br>
 >
-> Once <code>make</code> or <code>make</code> is used. Compiling with <code>make bonus</code> must not recompile mandatory files.
+> After using <code>make</code> or <code>make all</code>, compiling with <code>make bonus</code> must not recompile mandatory files. (disabled)
 
 ## Mandatory Instrucctions
 <h4> Part I&nbsp;&nbsp;|&nbsp; Libc functions</h4>
@@ -100,8 +101,8 @@ The project is about recoding some C basic functions. The first part has some fu
 </p>
 
 ## Bonus Instrucctions
-#### What is bonus about 
-**Bonus Part** introduces a new type of data structure, called **Linked List** or **Lists**. To use this data all the functions use this C struct.
+### What is Bonus about 
+The **Bonus Part** introduces a new type of data structure known as a **Linked List** or **Lists**. All the functions in this part make use of this C struct to operate on this data.
 * <code>void *content</code> stores the content
 * <code>struct s_list *next</code> adresses the next node of the list or NULL if the next node is the last one.
 <img width="1175" alt="t_list img" src="https://github.com/josephcheel/readme/blob/main/resources/libft/t_list.png">
@@ -119,9 +120,8 @@ The project is about recoding some C basic functions. The first part has some fu
 <img width="500" src="https://github.com/josephcheel/readme/blob/main/resources/libft/Compilation.gif">
 </div>
 
-* If you use <kbd>make</kbd> command it will appear the ***libft.a*** executable file.
-* You can use <kbd>make bonus</kbd> command and it will appear ***libft.a*** executable file (disabled)
-
+* If you use the <kbd>make</kbd> command, the executable file libft.a will appear.
+* You can also use the <kbd>make bonus</kbd> command, which will generate the libft.a executable file (bonus functions disabled)."
 ```shell
 > make
 > make bonus (disabled)
