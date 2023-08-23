@@ -109,7 +109,7 @@ The project is about recoding some C basic functions. The first part has some fu
 > Compilation is done through makefile rules.
 
 <div align="center">
-<img width="1000" src="readme_resources/compilation.gif">
+<img width="700" src="readme/Compilation.gif">
 </div>
 
 * If you use <kbd>make</kbd> command it will appear the ***libft.a*** executable file.
