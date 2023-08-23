@@ -11,17 +11,17 @@
 
 > This project is about coding a C library and creating your own library.  This project is about understanding the way some basic functions work, implementing and learning to use them.
 
-<!--<div align="center"><img align="center"  width="900" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Molinette.png"></div>->
-<!--<img align="right" width="500" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Molinette.png"> -->
-
 <img align="right" width="150" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Success.png">
-<br>
-<!-- <img align="right" width="500" src="https://github.com/josephcheel/42-Libft/blob/main/readme/Molinette_dark.png"> -->
- 
+
 ### What is the the project about
 The project is about recoding some C basic functions. The first part has some functions from ***libc***, and the second part are functions that either not in the libc, or that are part of it but in a different form.
 
-[//]: <> (This project is about creating a 2D game, which you can interact with your keyboard! The task has two parts: the **mandatory** and the **bonus**. Each of these parts is compiled and execute separately. The bonus has the same features plus some extra.)
+> <picture>
+>   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/danger.svg">
+>   <img alt="Danger" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/danger.svg">
+> </picture><br>
+>
+> The project should compile the Mandatory and Bonus separately, but in this version is unified to make use of the whole library on other projects more easily
 
 ## General Instrucctions
 
@@ -42,7 +42,8 @@ The project is about recoding some C basic functions. The first part has some fu
 > Once <code>make</code> or <code>make</code> is used. Compiling with <code>make bonus</code> must not recompile mandatory files.
 
 ## Mandatory Instrucctions
-#### Part I
+<h4> Part I&nbsp;&nbsp;|&nbsp; Libc functions</h4>
+<div  align="center"><b>No External functions required</b></div>
 <p align="center">
 • isalpha
 • isdigit
@@ -65,31 +66,41 @@ The project is about recoding some C basic functions. The first part has some fu
 • memcmp
 • strnstr
 • atoi
+</p>
+<div  align="center"><b>Malloc Function Allowed</b></div>
+<p align="center">
 • calloc
 • strdup
 </p>
 
-
-#### Part II
+<h4>Part II&nbsp;&nbsp;|&nbsp; Additional functions</h4>
+<div  align="center"><b>Malloc Function Allowed</b></div>
 <p align="center">
 • ft_substr
 • ft_strjoin
 • ft_strtrim
-• ft_split
 • ft_itoa
 • ft_strmapi
-• ft_striteri
+</p>
+
+
+<div  align="center"><b>Write Function Allowed</b></div>
+
+<p align="center">
 • ft_putchar_fd
 • ft_putstr_fd
-<br>• ft_putendl_fd
+• ft_putendl_fd
 • ft_putnbr_fd
 </p>
 
-<!--<img align="right" width="150" src="EXAMPLE ON RIGHT">
-
-<img align="right" width="200" src="EXAMPLE ON RIGHT">-->
+<div  align="center"><b>More functions...</b></div>
+<p align="center">
+• ft_split (Malloc & Free)
+• ft_striteri (No External Function Allowed)
+</p>
 
 ## Bonus Instrucctions
+<div  align="center"><b>No External Functions Allowed</b></div>
 <p align="center">
 • ft_lstnew • ft_lstadd_front • ft_lstsize • ft_lstlast • ft_lstadd_back • ft_lstdelone • ft_lstclear • ft_lstiter • ft_lstmap
 </p>
@@ -97,25 +108,14 @@ The project is about recoding some C basic functions. The first part has some fu
 ### How to compile it
 > Compilation is done through makefile rules.
 
-
 <div align="center">
-<img width="1000" src="readme_resources/make_bash.gif">
+<img width="1000" src="readme_resources/compilation.gif">
 </div>
 
 * If you use <kbd>make</kbd> command it will appear the ***libft.a*** executable file.
-* You can use <kbd>make bonus</kbd> command and it will appear ***libft.a*** executable file
+* You can use <kbd>make bonus</kbd> command and it will appear ***libft.a*** executable file (disabled)
 
 ```shell
 > make
-> make bonus
+> make bonus (disabled)
 ```
-
-
-
-[//]: <> (<h3> <a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/clfo781th000608l4lo1z8jb2/project/2664278" alt="jcheel-n's 42 so_long Score" /></a></h3>)
-
-[//]: <> (### | A project involving the creation of a small 2D game using a graphical library.)
-
-[//]: <> (#### How it works)
-
-[//]: <> (#### How to use it)
